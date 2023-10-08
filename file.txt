@@ -1,0 +1,3 @@
+py manage.py runserver
+django-admin startproject django_lessons
+python manage.py startapp (имя файла [app1])
