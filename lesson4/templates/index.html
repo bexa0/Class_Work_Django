@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>{{ book_list }}</p>
+    {% for book in book_list %}
+        <p>{{book}}</p>
+    {% endfor %}
+
+
+    <p>{{ var1 }}</p>
+
+    {% if var1 > 10 %}
+        <p>{{ var1 }}</p>
+    {% else %}
+        <p>Некорректное значение</p>
+    {% endif %}
+
+</body>
+</html>
