@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/mylibrary" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mylibrary_with_show" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson7_continuation" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9" jdkType="Python SDK" />
