@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>index 1</h1>
+    <p><a href="{% url 'second' %}">To index 2</a></p>
+    <p><a href="{% url 'third' %}">To index 3</a></p>
+    <p><a href="{% url 'forth' 'test' 5 'testslug' %}">To index 4</a></p>
+    <br>
+
+    {% for human in human_list %}
+        <p>{{ human }}</p>
+        <p><a href="{% url 'fifth' human.first_name human.last_name %}">Human Details</a></p>
+    {% endfor %}
+</body>
+</html>
