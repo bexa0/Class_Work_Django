@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <p><a href="{% url 'index' %}">To index</a></p>
+    <h1>Feedback Form</h1>
+    <p>Расскажите нам о своих впечетлениях</p>
+    <br>
+    <p>{{ reply }}</p>
+    <form method="POST" novalidate>
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+<!--        <label for="name">Ваше имя</label>-->
+<!--        <input type="text" name="name" id="name"><br>-->
+<!--        <br>-->
+<!--        <label for="email">Ваш email</label>-->
+<!--        <input type="email" name="email" id="email">-->
+<!--        <br>-->
+<!--        <label for="text">Ваши впечетления</label>-->
+<!--        <textarea name="text" id="text"></textarea><br>-->
+<!--        <br>-->
+
+        <input type="submit" value="send">
+    </form>
+</body>
+</html>
