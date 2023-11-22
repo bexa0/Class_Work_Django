@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Create</title>
+</head>
+<body>
+    <h1>Course Create</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Create">
+    </form>
+    <p><a href="{% url 'course_list' %}">Back</a></p>
+</body>
+</html>
