@@ -1,0 +1,28 @@
+{% extends 'app16/base.html' %}
+
+{% block title %}
+     Post List
+{% endblock %}
+
+{% block content %}
+    <h1>Post List</h1>
+
+    {% for post in post_list %}
+
+        <p>{{ post.title }}</p>
+        <p><a href="{% url 'post_detail' post.slug %}">Detail</a></p>
+<!--        <img style="width: 400px;" src="{{ post.image.url }}">-->
+
+<!--        {% if post.video %}-->
+<!--            <video controls>-->
+<!--                <source src="media/{{ post.video }}" type="video/mp4"> # .url-->
+<!--            </video>-->
+<!--        {% endif %}-->
+
+<!--        {% if post.audio %}-->
+<!--            <audio src="{{ post.audio.url }}" controls></audio>-->
+<!--        {% endif %}-->
+
+    {% endfor %}
+
+{% endblock content %}
