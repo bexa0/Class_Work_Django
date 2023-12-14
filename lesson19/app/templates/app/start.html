@@ -1,0 +1,21 @@
+{% extends 'app/base.html' %}
+
+{% block title %}
+    Start Page
+{% endblock %}
+
+{% block content %}
+
+    <h1>Start Page</h1>
+<!--    {% if message %}-->
+<!--        <p><a href="{% url 'test' %}">Test</a></p>-->
+<!--        {{ message }}-->
+<!--    {% endif %}-->
+    {% if user.is_authenticated %}
+        <p><a href="{% url 'log_out' %}">Log out</a></p>
+    {% else %}
+        <p><a href="{% url 'sign_up' %}">Sign up</a></p>
+        <p><a href="{% url 'log_in' %}">Log in</a></p>
+    {% endif %}
+
+{% endblock content %}
