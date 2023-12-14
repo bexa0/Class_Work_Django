@@ -1,0 +1,16 @@
+{% extends 'app/base.html' %}
+
+{% block title %}
+Product Delete
+{% endblock title %}
+
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Are you sure?">
+    </form>
+    <a href="{% url 'product_list' %}">Back</a>
+{% endblock content %}
+

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <p><a href="{% url 'product_create' %}">Product Create</a></p>
+    <div style="width: 300px; margin: auto; margin-top: 50px;">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+</body>
+</html>
